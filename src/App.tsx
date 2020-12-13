@@ -17,7 +17,7 @@ export type TodoListType = {
     filter: FilterValuesType
 }
 
-type TaskStateType = {
+export type TaskStateType = {
     [key: string]: Array<TaskType>
 }
 
@@ -70,6 +70,7 @@ function App() {
             setTasks({...tasks});
         }
     }
+
     function changeStatus(taskId: string, isDone: boolean, todoListID: string) {
         const todoListTasks = tasks[todoListID]
         const task: TaskType | undefined = todoListTasks.find(t => t.id === taskId);
@@ -78,6 +79,10 @@ function App() {
             setTasks({...tasks});
         }
     }
+
+
+
+
 
 
     function changeFilter(newFilterValue: FilterValuesType, todoListID: string) {
