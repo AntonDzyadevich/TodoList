@@ -4,6 +4,9 @@ import {AddItemForms} from "./AddItemForms";
 import {EditableSpan} from "./EditableSpan";
 import {Button, Checkbox, IconButton} from "@material-ui/core";
 import {Delete} from "@material-ui/icons";
+import {useSelector} from "react-redux";
+import {AppRootStateType} from "./state/store";
+import {TodoListType} from "./AppWithRedux";
 
 export type TaskType = {
     id: string
@@ -27,6 +30,8 @@ type PropsType = {
 
 
 export function Todolist(props: PropsType) {
+
+    // const ss = useSelector<AppRootStateType, Array<TaskType>>(state => state.tasks[props.id])
 
     const onAllClickHandler = () => props.changeFilter("all", props.id);
     const onActiveClickHandler = () => props.changeFilter("active", props.id);
