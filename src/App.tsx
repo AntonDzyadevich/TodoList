@@ -153,20 +153,20 @@ function App() {
 
                             return <Grid item>
                                 <Paper elevation={5} style={{padding: "20px", marginLeft: "50px"}}>
-                                    <Todolist
-                                        key={tl.id}
-                                        id={tl.id}
-                                        title={tl.title}
-                                        tasks={tasksForTodolist}
-                                        filter={tl.filter}
-                                        removeTask={removeTask}
-                                        changeFilter={changeFilter}
-                                        addTask={addTask}
-                                        changeTaskStatus={changeStatus}
-                                        changeTaskTitle={changeTaskTitle}
-                                        removeTodoList={removeTodoList}
-                                        changeTodoListTitle={changeTodoListTitle}
-                                    />
+                                    {/*<Todolist*/}
+                                    {/*    key={tl.id}*/}
+                                    {/*    id={tl.id}*/}
+                                    {/*    title={tl.title}*/}
+                                    {/*    tasks={tasksForTodolist}*/}
+                                    {/*    filter={tl.filter}*/}
+                                    {/*    removeTask={removeTask}*/}
+                                    {/*    changeFilter={changeFilter}*/}
+                                    {/*    addTask={addTask}*/}
+                                    {/*    changeTaskStatus={changeStatus}*/}
+                                    {/*    changeTaskTitle={changeTaskTitle}*/}
+                                    {/*    removeTodoList={removeTodoList}*/}
+                                    {/*    changeTodoListTitle={changeTodoListTitle}*/}
+                                    {/*/>*/}
                                 </Paper>
                             </Grid>
                         })
