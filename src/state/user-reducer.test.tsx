@@ -1,4 +1,3 @@
-
 import {StateType, userReducer} from './user-reducer';
 
 test('user reducer should increment only age', () => {
