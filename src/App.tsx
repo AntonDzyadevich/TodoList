@@ -28,19 +28,19 @@ function App() {
     let [tasks, setTasks] = useState<TasksStateType>({
         [todolistId1]: [
             {id: v1(), title: "HTML&CSS", addedDate: "", status: TaskStatuses.Completed, description: "",
-                todoListId: todolistId1, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low },
+                todolistId: todolistId1, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low },
 
             {id: v1(), title: "JS", addedDate: "", status: TaskStatuses.Completed, description: "",
-        todoListId: todolistId1, startDate: "", deadline: "", order: 0, priority: TaskPriorities.Low}
+        todolistId: todolistId1, startDate: "", deadline: "", order: 0, priority: TaskPriorities.Low}
         ],
 
 
         [todolistId2]: [
         {id: v1(), title: "JS",  addedDate: "", status: TaskStatuses.Completed, description: "",
-        todoListId: todolistId2, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low },
+        todolistId: todolistId2, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low },
 
         {id: v1(), title: "JS",  addedDate: "", status: TaskStatuses.Completed, description: "",
-        todoListId: todolistId2, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low },
+        todolistId: todolistId2, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low },
         ]
     });
 
@@ -56,7 +56,7 @@ function App() {
 
     function addTask(title: string, todolistId: string) {
         let task =   {id: v1(), title: "JS",  addedDate: "", status: TaskStatuses.Completed, description: "",
-            todoListId: todolistId2, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low };
+            todolistId: todolistId2, startDate: "", deadline: "",order: 0, priority: TaskPriorities.Low };
         //достанем нужный массив по todolistId:
         let todolistTasks = tasks[todolistId];
         // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:

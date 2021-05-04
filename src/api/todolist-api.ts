@@ -49,7 +49,7 @@ export type TaskType = {
     startDate: string
     deadline: string
     id: string
-    todoListId: string
+    todolistId: string
     order: number
     addedDate: string
 }

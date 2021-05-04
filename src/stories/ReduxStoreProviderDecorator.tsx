@@ -22,18 +22,18 @@ const initialGlobalState = {
     tasks: {
         ["todolistId1"]: [
             {id: v1(), title: "HTML&CSS",status: TaskStatuses.Completed,
-                description: "", todoListId: "todolistId1", startDate: "",
+                description: "", todolistId: "todolistId1", startDate: "",
                 deadline: "", order: 0, priority: TaskPriorities.Low, addedDate: ""},
             {id: v1(), title: "JS", status: TaskStatuses.Completed,
-                description: "", todoListId: "todolistId1", startDate: "",
+                description: "", todolistId: "todolistId1", startDate: "",
                 deadline: "", order: 0, priority: TaskPriorities.Low, addedDate: ""}
         ],
         ["todolistId2"]: [
             {id: v1(), title: "Milk", status: TaskStatuses.Completed,
-                description: "", todoListId: "todolistId2", startDate: "",
+                description: "", todolistId: "todolistId2", startDate: "",
                 deadline: "", order: 0, priority: TaskPriorities.Low, addedDate: ""},
             {id: v1(), title: "React Book",status: TaskStatuses.Completed,
-                description: "", todoListId: "todolistId2", startDate: "",
+                description: "", todolistId: "todolistId2", startDate: "",
                 deadline: "", order: 0, priority: TaskPriorities.Low, addedDate: ""}
         ]
     }
